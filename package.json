@@ -1,0 +1,21 @@
+{
+  "name": "todoin-new",
+  "version": "0.0.0",
+  "description": "Keep Things Simple.",
+  "repository": "https://chrome.google.com/webstore/detail/todoin/gobimjknanlaehcjalekeoolepmmjhpk",
+  "author": "Idan Goldman <idan@123code.co>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.6.1",
+    "@vue/compiler-sfc": "^3.2.6",
+    "vite": "^2.5.4"
+  }
+}
