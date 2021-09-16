@@ -6,16 +6,12 @@
   "author": "Idan Goldman <idan@123code.co>",
   "license": "MIT",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "dev": "gulp dev"
   },
-  "dependencies": {
-    "vue": "^3.2.6"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.6.1",
-    "@vue/compiler-sfc": "^3.2.6",
-    "vite": "^2.5.4"
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-nunjucks": "^5.1.0"
   }
 }
