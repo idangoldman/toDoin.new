@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en"><head>
+  <title>toDoin.new</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="/favicon.ico" />
+
+  <script type="module" src="script.js" async defer></script>
+</head><body>
+
+  <div id="toDoin">
+
+    <header class="header">
+      <a class="logo" href="#">
+        <!-- <svg></svg> -->
+      </a>
+
+      <blockquote class="breadcrumb show">
+        Sort by complete
+      </blockquote>
+
+      <div class="sort-by">
+        <i class="icon"></i>
+        <nav class="menu">
+          <a href="/sort-by/complete" class="selected">Sort by complete</a>
+          <a href="/sort-by/created_at" class="">Sort by date</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="todos">
+      <ul class="list">
+        <li class="todo" id="100ba302-c7c5-efc2-423d-5e5fb739cbb1" draggable="true">
+          <i class="check-box"></i>
+          <p class="title ltr">sadfasdfasdfassadfasdfasdf</p>
+        </li>
+        <li class="todo" id="6f1bc757-a941-6461-bce3-17e412d49263" draggable="true">
+          <i class="check-box"></i>
+          <p class="title ltr">asdfasdfas</p>
+        </li>
+        <li class="todo" id="ca0a6418-1136-9f6e-0ffa-d349ec9e284d" draggable="true">
+          <i class="check-box"></i>
+          <p class="title ltr">dfasdf</p>
+        </li>
+        <li class="todo" id="fdad163c-f5b9-3838-4a82-41ff2883803b" draggable="true">
+          <i class="check-box"></i>
+          <p class="title ltr">sdf</p>
+        </li>
+        <li class="todo" id="a47356ca-bd19-007f-1c38-10c625e45aa0" draggable="true">
+          <i class="check-box"></i>
+          <p class="title ltr">asdfasdfasdfas</p>
+        </li>
+      </ul>
+    </section>
+
+    <form class="typing" action="typing.js" method="post">
+      <input name="id" type="hidden" value="" />
+      <textarea class="title" name="title" placeholder="What's Next?"></textarea>
+      <button type="button" class="toggle-privacy" title="Keep your actions private."></button>
+    </form>
+
+  </div>
+
+</body></html>
