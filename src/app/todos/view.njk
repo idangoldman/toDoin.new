@@ -1,0 +1,12 @@
+<section class="todos">
+  <ul class="list">
+    {% for todo in records.todos %}
+      <li class="todo {{ 'complete' if todo.complete }}" id="{{ todo.id }}" draggable="true">
+        <i class="check-box"></i>
+        <p class="title {{ 'rtl' if todo.title.rtl }}">
+          {{ todo.title }}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

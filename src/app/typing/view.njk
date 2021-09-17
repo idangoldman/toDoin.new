@@ -1,0 +1,5 @@
+<form class="typing" action="typing.js" method="post">
+  <input name="id" type="hidden" value="{{ locals.todo.id }}"/>
+  <textarea class="title" name="title" placeholder="What's Next?" autofocus>{{ locals.todo.title }}</textarea>
+  <button type="button" class="privacy {{ 'on' if locals.todo.privacy }}" title="Keep your actions private."></button>
+</form>

@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="en"><head>
+  <title>toDoin.new</title>
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="icon" href="/favicon.ico"/>
+
+  <script type="module" src="/script.js" async defer></script>
+</head><body>
+
+  <div id="toDoin">
+
+    {% include './app/header/view.njk' %}
+    {% include './app/todos/view.njk' %}
+
+    <button type="button" class="clean-button {{ 'show' if locals.showClearButton }}">
+      Clear Complete
+    </button>
+
+    {% include './app/typing/view.njk' %}
+
+  </div>
+
+</body></html>

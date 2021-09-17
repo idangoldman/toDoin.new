@@ -1,0 +1,23 @@
+<header class="header">
+  <a class="logo" href="#">
+    <!-- <svg></svg> -->
+  </a>
+
+  {% if locals.sortBySelected.not.empty %}
+    <blockquote class="breadcrumb">
+      {{ locals.sortBySelected.text }}
+    </blockquote>
+  {% endif %}
+
+  <div class="sort-by {{ 'open' if locals.sortByIsOpen }}">
+    <i class="icon"></i>
+    <nav>
+      <a href="#complete" class="{{ 'selected' if locals.sortBySelected.value === 'complete' }}">
+      Sort by Complete
+    </a>
+      <a href="#createdAt" class="{{ 'selected' if locals.sortBySelected.value === 'createdAt' }}">
+      Sort by Date
+    </a>
+    </nav>
+  </div>
+</header>
